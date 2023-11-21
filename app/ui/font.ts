@@ -1,6 +1,11 @@
-import { Inter } from 'next/font/google';
+import { Inter, Lusitana } from 'next/font/google';
 
 export const inter = Inter({ subsets: ['latin'] });
+
+export const lusitana = Lusitana({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+});
 
 // next/font/google에서 Inter 폰트를 가져오고, subset을 설정한다.
 // 최상의 성능과 유연성을 위해 변수 폰트를 사용하는 것이 좋다.

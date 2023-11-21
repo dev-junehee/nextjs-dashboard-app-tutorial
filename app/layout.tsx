@@ -1,4 +1,5 @@
 import '@/app/ui/global.css';
+import { notoSansKr } from '@/app/ui/font';
 
 export default function RootLayout({
   children,
@@ -7,7 +8,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      {/* antialiased : Tailwind에서 폰트 부드럽게 만드는 기능 */}
+      <body className={`${notoSansKr.className} antialiased`}>{children}</body>
     </html>
   );
 }
