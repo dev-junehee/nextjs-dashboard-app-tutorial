@@ -2,6 +2,7 @@ import AcmeLogo from '@/app/ui/acme-logo';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import { lusitana } from '@/app/ui/fonts';
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from '@/app/ui/home.module.css';
 
 export default function Page() {
@@ -30,7 +31,20 @@ export default function Page() {
           </Link>
         </div>
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
-          {/* Add Hero Images Here */}
+          <Image
+            src="/hero-desktop.png"
+            width={1000}
+            height={760}
+            className="hidden md:block" // 데스크탑에서 해당 이미지 사용
+            alt="대시보드 프로젝트 데스크탑 버전 스크린샷"
+          />
+          <Image
+            src="/hero-mobile.png"
+            width={560}
+            height={620}
+            className="block md:hidden" // 모바일에서 해당 이미지 사용
+            alt="대시보드 프로젝트 모바일 버전 스크린샷"
+          />
         </div>
       </div>
     </main>
