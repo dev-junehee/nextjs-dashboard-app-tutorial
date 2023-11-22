@@ -7,7 +7,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="ko">
       {/* antialiased : Tailwind에서 폰트 부드럽게 만드는 기능 */}
       <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
